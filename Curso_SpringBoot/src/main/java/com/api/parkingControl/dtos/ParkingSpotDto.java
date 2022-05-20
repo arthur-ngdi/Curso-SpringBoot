@@ -1,12 +1,11 @@
 package com.api.parkingControl.dtos;
 
-import javax.persistence.Column;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 public class ParkingSpotDto {
 
     @NotBlank
-    private String parkingSlotNumber;
+    private String parkingSpotNumber;
     @NotBlank
     @Size(max = 7)
     private String licensePlateCar;
@@ -23,12 +22,12 @@ public class ParkingSpotDto {
     @NotBlank
     private String block;
 
-    public String getParkingSlotNumber() {
-        return parkingSlotNumber;
+    public String getParkingSpotNumber() {
+        return parkingSpotNumber;
     }
 
-    public void setParkingSlotNumber(String parkingSlotNumber) {
-        this.parkingSlotNumber = parkingSlotNumber;
+    public void setParkingSpotNumber(String parkingSpotNumber) {
+        this.parkingSpotNumber = parkingSpotNumber;
     }
 
     public String getLicensePlateCar() {
